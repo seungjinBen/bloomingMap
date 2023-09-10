@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+:root{
+    --white-color: #fff;
+    --black-color: #140a00;
+    --grey-dark-color: #363636;
+    --grey-light-color: #e0e0e0;
+}
+.App{
+    width:550px;
+    height: 800px;
+    background-color: aqua;
+}
+.logo{
+    background-color: aqua;
+    width: 550px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'NanumGothicBold';
+}
+.listTitle{
+    width: 550px;
+    height: 25px;
+    background-color: gold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+    width: 550px;
+    height: 25px;
+    background-color: gold;
+    border-top: 1px solid var(--grey-dark-color);;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+    position: fixed;
+    top: 800px;
+    left: 250px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.map{
+    z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+.goNext{
+    display: flex;
+    background-color: gainsboro;
+    width: 550px;
+    font-size: 20px;
+    border-radius: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.goMap{
+    color: white;
+    width: 275px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goMap:hover{
+    background-color:gray;
+}
+.goSchedule{
+    color: white;
+    width: 275px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goSchedule:hover{
+    background-color:gray;
 }
