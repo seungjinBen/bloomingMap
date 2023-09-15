@@ -1,0 +1,58 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	font-family: 'Noto Sans KR';
+}
+.homeBackground{
+    /* top-24, bottom-48 */
+    width: 360px;
+    height: 728px;
+    background: #007BFF;
+}
+.homeLogo{
+    position: absolute;
+    top:140px;
+    left:68px;
+}
+.homeExp{
+    position: absolute;
+    top:212px;
+    left:45px;
+}
+.homeBack{
+    position: absolute;
+    top:283px;
+    left:39px;
+}
+.homeCont{
+    position: absolute;
+    top:316px;
+    left:76px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.entryGo{
+    position: absolute;
+    top:525px;
+    left:55px;
+    width: 252px;
+    height: 49px;
+    flex-shrink: 0;
+    border-radius: 79px;
+    background: #FFD875;
+    border-style: none;
+    color: #252525;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

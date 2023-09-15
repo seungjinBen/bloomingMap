@@ -1,0 +1,188 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	font-family: 'Noto Sans KR';
+}
+
+:root{
+    --white-color: #fff;
+    --black-color: #140a00;
+    --grey-dark-color: #363636;
+    --grey-light-color: #e0e0e0;
+}
+
+/* Main CSS */
+.App{
+    width:360px;
+    height: 728px;
+    position: relative;
+    background-color: #FFF;
+}
+.logo{
+    width: 360px;
+    height: 48px;
+}
+.logoImg{
+    position: absolute;
+    top:13px;
+    left: 130px;
+    width: 99px;
+    height: 22px;
+}
+.aboutContent{
+    width: 336px;
+    margin-left: 12px;
+    height: 167px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FCECEC;
+}
+.aboutContent2{
+    width: 336px;
+    margin-left: 12px;
+    height: 117px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FCECEC;
+}
+.aboutTitle{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 14px 0 0 14px;
+}
+.aboutExp{
+    color: #252525;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 4px 0 0 14px;
+}
+.aboutTime{
+    display: flex;
+    align-items: center;
+    margin: 6px 0 -6px 14px;
+}
+.aboutTimeImg{
+    margin-right: 6px;
+}
+.aboutTime p{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.aboutLine{
+    width: 308px;
+    height: 1px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.10);
+    margin: 1px 0 0 14px;
+}
+.aboutEvent{
+    display: flex;
+    align-items: center;
+    margin: -6px 0 0 14px;
+}
+.aboutEventImg{
+    margin-right: 6px;
+}
+.aboutEvent{
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.aboutDate{
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+    color: #858585;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.aboutHour{
+    margin-left: 4px;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.aboutEventCont{
+    margin: 10px 0px 0px 10px;
+    width: 231px;
+    color: #858585;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.listUpper2{
+    width: 60px;
+    height: 3px;
+    margin: 14px 150px 14px 150px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #E1E1E1;
+}
+.goNext{
+    z-index: 110;
+    position: absolute;
+    top: 682px;
+    display: flex;
+    /* background-color: gainsboro; */
+    width: 360px;
+    border-radius: 5px;
+    color: #6F6F6F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top: 1px solid var(--grey-light-color);
+}
+.goMap2{
+    width: 180px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.goMap2:hover{
+    background-color:var(--grey-light-color);
+}
+.goSchedule2{
+    width: 180px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00BB82;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.goSchedule2:hover{
+    background-color:var(--grey-light-color);
+}
+.downBar2{
+    position: absolute;
+    top:726px;
+    left: 180px;
+    width: 180px;
+    height: 2px;
+    flex-shrink: 0;
+    background: #00CD8E;
+}

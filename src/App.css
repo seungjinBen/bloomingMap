@@ -1,75 +1,363 @@
+@font-face {
+    font-family: 'SeoulNamsanM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulNamsanM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+	font-family: 'Noto Sans KR';
+}
+
 :root{
     --white-color: #fff;
     --black-color: #140a00;
     --grey-dark-color: #363636;
     --grey-light-color: #e0e0e0;
 }
+
+/* Main CSS */
 .App{
-    width:550px;
-    height: 800px;
-    background-color: aqua;
+    width:360px;
+    height: 728px;
+    position: relative;
+    background-color: #FFF;
 }
 .logo{
-    background-color: aqua;
-    width: 550px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family:'NanumGothicBold';
+    width: 360px;
+    height: 48px;
 }
-.listTitle{
-    width: 550px;
-    height: 25px;
-    background-color: gold;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logoImg{
+    position: absolute;
+    top:13px;
+    left: 130px;
+    width: 99px;
+    height: 22px;
+}
+.category .cate1{ 
+    /* 라벨이 48px */
+    position: absolute;
+    z-index: 2;
+    top:71px;
+    left:45px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+}
+.category .cate1Img{
+    position: absolute;
+    z-index: 2;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.category .cate2{
+    position: absolute;
+    z-index: 2;
+    top:71px;
+    left: 126px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+}
+.category .cate2Img{
+    position: absolute;
+    z-index: 2;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.category .cate3{
+    position: absolute;
+    z-index: 2;
+    top:71px;
+    left: 207px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+}
+.category .cate3Img{
+    position: absolute;
+    z-index: 2;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.category .cate4{
+    position: absolute;
+    z-index: 2;
+    top:71px;
+    left: 304px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: black;
+}
+.category .cate4Img{
+    position: absolute;
+    z-index: 2;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.gpsBack{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 539px;
+    left: 0px;
+    cursor: pointer;
+}
+.gpsMarker{
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 565px;
+    left: 29px;
+    cursor: pointer;
 }
 .list{
-    width: 550px;
-    height: 25px;
-    background-color: gold;
-    border-top: 1px solid var(--grey-dark-color);;
+    width: 360px;
 }
-
-
-button{
-    position: fixed;
-    top: 800px;
-    left: 250px;
+.listFixed{
+    z-index: 101;
+    position: absolute;
+    top: 625px;
+    left: 0px;
+    background-color: #FFF;
+    border-radius: 26px 26px 0px 0px;
 }
-.map{
-    z-index: 1;
+.listUpperBar{
+    width: 360px;
+    height: 10px;
 }
-.goNext{
-    display: flex;
-    background-color: gainsboro;
-    width: 550px;
-    font-size: 20px;
-    border-radius: 5px;
+.listUpper{
+    width: 60px;
+    height: 3px;
+    margin-left: 150px;
+    margin-top: 3px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #E1E1E1;
 }
-.goMap{
-    color: white;
-    width: 275px;
-    height: 80px;
+.listTitle{
+    height: 40px;
+    /* background-color: gold; */
+    color: var(--grey-dark-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.listContent{
+    height: 0px;
+    /* background-color: goldenrod; */
+}
+.active{
+    /* 네이버 상표 z-index:100 */
+    z-index: 101; 
+    position: absolute;
+    background-color:white;
+    top: 610px;
+    /* width: 360px;
+    height: 558px; */
+    margin-bottom: 80px;
+    transform: translateY(-500px);
+    transition-duration: 1s;
+}
+.active .listContent{
+    z-index: 101; 
+    position: absolute;
+    background-color:white;
+    top: 508px;
+    width: 360px;
+    height: 515px;
+    margin-bottom: 80px;
+    transform: translateY(-500px);
+    transition-duration: 0.7s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.active .listFixed{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 26px 26px 0px 0px;
+}
+.active .listContent{
+    margin-top: 48px;
+}
+
+.listClose{
+    position: fixed;
+    top: 5px;
+    left: 320px;
+    visibility: hidden;
+}
+.activeClose{
+    /* 리스트창 닫기 버튼 */
+    visibility: visible;
+    z-index: 103;
+    cursor: pointer;
+}
+
+.modalButton{
+    position: absolute;
+    top: 563px;
+    left: 218px;
+    width: 118px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFF;
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-style: none;
+}
+.polygon{
+    width: 11px;
+    height: 11px;
+    margin: 0px -2px 3px 3px;
+}
+.goNext{
+    z-index: 110;
+    position: absolute;
+    top: 682px;
+    display: flex;
+    /* background-color: gainsboro; */
+    width: 360px;
+    border-radius: 5px;
+    color: #6F6F6F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-top: 1px solid var(--grey-light-color);
+}
+.goMap{
+    width: 180px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00BB82;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .goMap:hover{
-    background-color:gray;
+    background-color:var(--grey-light-color);
 }
 .goSchedule{
-    color: white;
-    width: 275px;
-    height: 80px;
+    width: 180px;
+    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .goSchedule:hover{
-    background-color:gray;
+    background-color:var(--grey-light-color);
+}
+.downBar{
+    position: absolute;
+    top:726px;
+    width: 180px;
+    height: 2px;
+    flex-shrink: 0;
+    background: #00CD8E;
+}
+/* 드래그시 나타나는 리스트바 */
+.listBar{
+    margin-top: 10px;
+}
+/* .barName{
+    display: flex;
+}
+.listBar .barTitle{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.listBar .barType{
+    font-size: 12px;
+    color: grey;
+    font-weight: 540;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.listBar .barAddress{
+    font-size: 14px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.listBar img{
+    height: 70px;
+    width: 70px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} */
+
+/* 모달창 */
+.modalBack{
+    z-index: 104;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:360px;
+    height: 728px;
+    background-color: rgba(0,0,0,0.35);
+}
+.bloomingMap{
+    z-index: 105;
+    position: absolute;
+    top: 176px;
+    left: 20px;
+    width: 320px;
+    height: 320px;
+}
+.modalDelete{
+    z-index: 105;
+    position: absolute;
+    top: 132px;
+    left: 308px;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 15px;
+    border-style: none;
+}
+.modalDeleteImg{
+    position: absolute;
+    top: 4px;
+    left: 4px;
 }
